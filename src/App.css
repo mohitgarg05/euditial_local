@@ -1,0 +1,81 @@
+.banner img{  
+  max-width: 100%;
+
+}
+
+.banner{
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+}
+
+.banner img{
+  height: 75vh;
+  max-width: 90%;
+  width: 1200px;
+
+}
+
+.services,.customer_review ,.news{
+  margin-top: 70px;
+
+}
+
+.news h1{
+   text-align: center;
+  margin: 0;
+  font-size: 25px;
+}
+
+.news p{
+  
+  text-align: center;
+  margin: 0;
+  width: 80%;
+  margin: auto
+}
+
+.para_div{
+  margin-top: 10px;
+}
+.customer_review h1{
+  text-align: center;
+  margin: 0;
+  font-size: 25px;
+}
+
+.services h1{
+  text-align: center;
+  margin: 0;
+  font-size: 25px;
+}
+.shopify_solution h1{
+  text-align: center;
+  margin: 0;
+  font-size: 25px;
+
+}
+
+.mantine-1to6it{
+  padding: 0;
+
+}
+.mantine-d9zk78{
+
+}
+.mantine-14z3iiq{
+  font-size: 27px;
+}
+
+.customer_rev{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  border: solid 1px #808080;
+}
+
+.customer_rev #rev{
+  text-align: center;
+}
