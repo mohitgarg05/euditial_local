@@ -29,11 +29,14 @@ import {
         alignItems:"center"
     },
     try:{
-        backgroundColor:"#8E9B80",
+        backgroundColor : 'var(--theme-color )',
         border:"none",
         color:"white",
         fontSize:"20px",
         padding:"5px",
+        '&:focus': {
+            outline: 'none',
+          },
     },
     heading:{
         fontSize:"25px"

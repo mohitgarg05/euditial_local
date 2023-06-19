@@ -45,9 +45,15 @@ const useStyles = createStyles((theme) => ({
   },
 
   control: {
-    backgroundColor : '#8E9B80',
+    backgroundColor : 'var(--theme-color )',
     [theme.fn.smallerThan('xs')]: {
       flex: 1,
+    },
+    '&:focus': {
+      outline: 'none',
+    },
+    '&:hover': {
+      backgroundColor : 'var(--theme-color )',
     },
   },
 

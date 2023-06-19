@@ -12,7 +12,7 @@ import {
   import { IconChevronDown } from '@tabler/icons-react';
   import { MantineLogo } from '@mantine/ds';
   import "../styles/navbar.css"
-  import Logo from "../images/logo.svg";
+  import Logo from "../images/EUDIZITAL LOGO (2).png";
   
   const HEADER_HEIGHT = rem(70);
   
@@ -64,7 +64,7 @@ import {
 
   const links = [
     {
-      link: '/home',
+      link: '/',
       label: 'Home',
     },
     {
@@ -89,7 +89,7 @@ import {
     const [opened, { toggle }] = useDisclosure(false);
     const items = links.map((link) => {
       const menuItems = link.links?.map((item) => (
-        <Menu.Item key={item.link}>{item.label}</Menu.Item>
+        <Menu.Item key={item.link} onClick={()=>console.log("mskmd")}>{item.label}</Menu.Item>
       ));
   
       if (menuItems) {
@@ -99,7 +99,6 @@ import {
               <a
                 href={link.link}
                 className={classes.link}
-                onClick={(event) => event.preventDefault()}
               >
 
                   <span className={classes.linkLabel}>{link.label}</span>
@@ -117,7 +116,6 @@ import {
           key={link.label}
           href={link.link}
           className={classes.link}
-          onClick={(event) => event.preventDefault()}
         >
           {link.label}
         </a>

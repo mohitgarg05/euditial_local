@@ -1,71 +1,69 @@
-import { ThemeIcon, Text, Title, Container, SimpleGrid, createStyles, rem } from '@mantine/core';
-
- const MOCKDATA = [
-  {
-
-    description:''
-  },
-  {
-
-    description:''
-  },{
-
-    description:''
-  },
-];
-
-
- function Feature({  description }) {
-  return (
-    <div className='customer_rev'>
-      
-      <Text size="lg" color="dimmed" id='rev'   sx={{ lineHeight: 1.6 }}>
-        {description}
-      </Text>
-    </div>
-  );
-}
+import {
+  createStyles,
+  Card,
+  Image,
+  ActionIcon,
+  Group,
+  Text,
+  Avatar,
+  Badge,
+  rem,
+} from '@mantine/core';
+import { useNavigate } from "react-router-dom";
 
 const useStyles = createStyles((theme) => ({
+  card: {
+    width:'30%',
+    backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[7] : theme.white,
+  },
 
+  title: {
+    fontFamily: `Greycliff CF, ${theme.fontFamily}`,
+  },
+  read:{
+    color : "rgb(31,63,173)",
+    cursor:"pointer"
+  },
 
-  description: {
-    textAlign: 'center',
-
-    [theme.fn.smallerThan('sm')]: {
-      textAlign: 'left',
-    },
+  footer: {
+    padding: `${theme.spacing.xs} ${theme.spacing.lg}`,
+    marginTop: theme.spacing.md,
+    borderTop: `${rem(1)} solid ${
+      theme.colorScheme === 'dark' ? theme.colors.dark[5] : theme.colors.gray[2]
+    }`,
   },
 }));
 
 
 
- function FeaturesGrid({  description, data = MOCKDATA }) {
-  const { classes } = useStyles();
-  const features = data.map((feature, index) => <Feature {...feature} key={index} />);
+export function ArticleCardFooter({
+  image,
+  category,
+  title,description,link
+}) {
+
+  const navigate = useNavigate();
+  const { classes, theme } = useStyles();
 
   return (
-    <Container size={1200}>
+    <Card withBorder padding="lg" radius="md" className={classes.card}>
+      <Card.Section mb="sm">
+        <Image src={image} alt={title} height={180} />
+      </Card.Section>
 
-      <Container size={560} p={0}>
-        <Text size="lg" className={classes.description}>
-          {description}
-        </Text>
-      </Container>
+      <Badge>{category}</Badge>
 
-      <SimpleGrid
-        mt={50}
-        cols={3}
-        spacing={100}
-        breakpoints={[
-          { maxWidth: 980, cols: 2, spacing: 'xl' },
-          { maxWidth: 755, cols: 1, spacing: 'xl' },
-        ]}
-      >
-        {features}
-      </SimpleGrid>
-    </Container>
+      <Text fw={700} className={classes.title} mt="xs">
+        {title}
+      </Text>
+      <Text fw={200} className={classes.title} mt="xs">
+        {description}
+      </Text>
+      <Text fw={500} className={classes.read} mt="xs" onClick={()=>navigate(link)}>
+        Read full post
+      </Text>
+    </Card>
   );
 }
 
-export default FeaturesGrid
+export default ArticleCardFooter

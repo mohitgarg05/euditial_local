@@ -1,6 +1,6 @@
 import { createStyles, Text, Container, ActionIcon, Group, rem } from '@mantine/core';
 import { IconBrandTwitter, IconBrandYoutube, IconBrandInstagram } from '@tabler/icons-react';
-import Logo from "../images/logo.svg";
+import Logo from "../images/EUDIZITAL LOGO (2).png";
 
 const useStyles = createStyles((theme) => ({
 

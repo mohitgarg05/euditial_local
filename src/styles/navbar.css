@@ -1,7 +1,7 @@
 .mantine-1ewre16{
     height: 40px;
     border-radius: 0px;
-    background-color: #8E9B80;
+    background-color: var(--theme-color );
 }
 
 header{

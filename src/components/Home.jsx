@@ -49,7 +49,31 @@ function Home(){
                 <p>From tips on how to get started to advice on pricing and marketing your products, we aim to make the journey as smooth as
                     possible for our readers. We hope you find our blog  helpful!
                     </p></div>
-                    <New />
+                    <div className='news_div'>
+                        <New 
+                            image="https://assets.website-files.com/636beeacf6f6ac11e3f722cc/6377871724da1944e2823758_cherrydeck-rMILC1PIwM0-unsplash.jpg"
+                            category="Uncategorized" 
+                            title="Enhancing EU E-commerce: The Power of Shopify Apps in the EU Digital Landscape"
+                            description ="As the European Union (EU) continues to foster digital innovation and connectivity, businesses within the region are seeking effective tools to thrive 
+                            in the ever-expanding e-commerce landscape..."
+                            link="/blog-post/enhancing-eu-E-commerce" />
+                         <New 
+                            image="https://assets.website-files.com/636beeacf6f6ac11e3f722cc/6377871724da1944e2823758_cherrydeck-rMILC1PIwM0-unsplash.jpg"
+                            category="Uncategorized" 
+                            title="Boost Your Business with Shopify Apps: Expanding Possibilities"
+                            description ="In the realm of e-commerce, establishing a strong online
+                            presence and streamlining business operations are crucial for 
+                            success.In this blog post, we will explore the power of Shopify apps ..."
+                            link="/blog-post/boost-your-business" />
+                        <New 
+                            image="https://assets.website-files.com/636beeacf6f6ac11e3f722cc/6377871724da1944e2823758_cherrydeck-rMILC1PIwM0-unsplash.jpg"
+                            category="Uncategorized" 
+                            title="Enhancing EU E-commerce: The Power of Shopify Apps in the EU Digital Landscape"
+                            description ="As the European Union (EU) continues to foster digital innovation and connectivity, businesses within the region are seeking effective tools to thrive 
+                            in the ever-expanding e-commerce landscape."
+                            link="/firstblog" />
+
+                    </div>
             </section>  
 
 
