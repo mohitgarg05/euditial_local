@@ -75,10 +75,6 @@ import {
           link: '/category1',
           label: 'CDON Connector App',
         },
-        // {
-        //   link: '/category2',
-        //   label: 'Category 2',
-        // },
       ],
     },
     {
@@ -134,9 +130,10 @@ import {
           <Group>
             <Burger opened={opened} onClick={toggle} className={classes.burger} size="sm" />
             <img className={classes.site_logo} src={Logo} />
-          </Group>
+         
           <Group spacing={5} className={classes.links}>
             {items}
+          </Group>
           </Group>
           <Button radius="xl" h={30}>
             Get Apps now

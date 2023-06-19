@@ -27,10 +27,10 @@ import { ThemeIcon, Text, Title, Container, SimpleGrid, createStyles, rem } from
  function Feature({  title, description }) {
   return (
     <div>
-      <Text size="lg" mb={7}>
+      <Text size="xl" mb={7}>
         {title}
       </Text>
-      <Text size="sm" color="dimmed" sx={{ lineHeight: 1.6 }}>
+      <Text size="lg" color="dimmed" sx={{ lineHeight: 1.6 }}>
         {description}
       </Text>
     </div>
