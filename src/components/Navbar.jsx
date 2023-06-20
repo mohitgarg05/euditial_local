@@ -10,7 +10,6 @@ import {
   } from '@mantine/core';
   import { useDisclosure } from '@mantine/hooks';
   import { IconChevronDown } from '@tabler/icons-react';
-  import { MantineLogo } from '@mantine/ds';
   import "../styles/navbar.css"
   import Logo from "../images/EUDIZITAL LOGO (2).png";
   
@@ -78,7 +77,7 @@ import {
       ],
     },
     {
-      link: '/services',
+      link: '/about-us',
       label: 'About Us',
     },
   ];

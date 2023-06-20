@@ -1,0 +1,78 @@
+.about_wrapper{
+
+}
+
+.about_wrapper #aboutUs{
+    text-align: center;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.control_div{
+
+    width: 80%;
+    margin: auto;
+    margin-top: 60px;
+
+    gap: 40px;
+
+}
+
+.heading_control{
+    flex: 40%;
+}
+.heading_control  h1{
+    font-size: 35px;
+}
+
+.para_control{
+    flex: 50%;
+}
+
+.support_div{
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    background-color: var(--theme-color);
+    justify-content: space-around;
+}
+
+.support_para{
+    padding-left: 120px;
+    color: white;
+    width: 50%;
+}
+.support_img{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.support_para button{
+    background-color: #8d809b;
+    border: none;
+    color: white;
+    width: 30%;
+    height: 40px;
+    font-size: 25px;
+}
+.support_div img{
+    
+    width: 65%;
+}
+
+.workflow{
+    background-color: var(--theme-color);
+    color: white;
+    height: 35vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+.workflow h1{
+    font-size: 45px;
+}
