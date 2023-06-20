@@ -8,18 +8,18 @@ import {
   
   const useStyles = createStyles((theme) => ({
     card: {
-        height : '550px',
         width:"24%",
         backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[7] : theme.white,
     },
 
     img:{
         objectFit: 'cover',
-    height: '100%', // Ensure the image takes up the full height of its container
-    width: '100%',
+        height: '100%', // Ensure the image takes up the full height of its container
+        width: '100%',
     },
   
     title: {
+      fontSize:"0.9em",
       fontFamily: `Greycliff CF, ${theme.fontFamily}`,
     },
     button:{
@@ -32,14 +32,13 @@ import {
         backgroundColor : 'var(--theme-color )',
         border:"none",
         color:"white",
-        fontSize:"20px",
         padding:"5px",
         '&:focus': {
             outline: 'none',
           },
     },
     heading:{
-        fontSize:"25px"
+        fontSize:"1.3em"
     }
 
   }));
@@ -53,7 +52,7 @@ import {
     const { classes } = useStyles();
   
     return (
-      <Card  padding="lg" radius="md" className={classes.card}>
+      <Card  padding="lg" radius="md" className={classes.card} id='feature'>
         <Card.Section mb="lg" className={classes.imgDiv}>
           <Image src={img} alt={title} className={classes.img} />
         </Card.Section>

@@ -9,6 +9,7 @@ import {
   Badge,
   rem,
 } from '@mantine/core';
+import "../App.css"
 import { useNavigate } from "react-router-dom";
 
 const useStyles = createStyles((theme) => ({
@@ -21,7 +22,7 @@ const useStyles = createStyles((theme) => ({
     fontFamily: `Greycliff CF, ${theme.fontFamily}`,
   },
   read:{
-    color : "rgb(31,63,173)",
+    color : "var(--theme-color)",
     cursor:"pointer"
   },
 
@@ -46,7 +47,7 @@ export function ArticleCardFooter({
   const { classes, theme } = useStyles();
 
   return (
-    <Card withBorder padding="lg" radius="md" className={classes.card}>
+    <Card  padding="lg" radius="md" className={classes.card} id='card'>
       <Card.Section mb="sm">
         <Image src={image} alt={title} height={180} />
       </Card.Section>

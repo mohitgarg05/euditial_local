@@ -38,10 +38,10 @@ function Home(){
                     <Service />
             </section>  
 
-            <section className='customer_review'>
+            {/* <section className='customer_review'>
                 <h1>Customers Recommend Us</h1>
                     <Customer />
-            </section>  
+            </section>   */}
 
             <section className='news'>
                 <h1>Our News</h1>
@@ -68,10 +68,9 @@ function Home(){
                         <New 
                             image="https://assets.website-files.com/636beeacf6f6ac11e3f722cc/6377871724da1944e2823758_cherrydeck-rMILC1PIwM0-unsplash.jpg"
                             category="Uncategorized" 
-                            title="Enhancing EU E-commerce: The Power of Shopify Apps in the EU Digital Landscape"
-                            description ="As the European Union (EU) continues to foster digital innovation and connectivity, businesses within the region are seeking effective tools to thrive 
-                            in the ever-expanding e-commerce landscape."
-                            link="/firstblog" />
+                            title="Empowering a Digital Europe: Unleashing the Potential of EU Digital Initiatives"
+                            description ="The European Union (EU) has embarked on a transformative journey to build a digital Europe, harnessing the power of technology and innovation to drive economic growth, enhance digital rights, and ..."
+                            link="/blog-post/empowering-a-digital-europe" />
 
                     </div>
             </section>  

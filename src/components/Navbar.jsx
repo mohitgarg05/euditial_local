@@ -51,12 +51,12 @@ import {
       fontWeight: 500,
   
       '&:hover': {
-        backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[6] : theme.colors.gray[0],
+        backgroundColor: 'var(--theme-color)',
+        color : "white"
       },
     },
   
     linkLabel: {
-
       marginRight: rem(5),
     },
   }));
