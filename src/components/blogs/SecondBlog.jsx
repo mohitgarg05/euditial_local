@@ -1,13 +1,15 @@
 import Navbar from "../Navbar";
 import Footer from "../Footer";
 import "../../styles/blog.css"
+import Blog from "../../images/Designer (2).png";
+
 function SecondBlog(){
     return(
         <div className="bog_container" >
             <Navbar />
             <div className="blog_wrapper">
                 <h1> Boost Your Business with Shopify Apps: Expanding Possibilities</h1>
-                    <img src="https://assets.website-files.com/636beeacf6f6ac11e3f722cc/6377871724da1944e2823758_cherrydeck-rMILC1PIwM0-unsplash.jpg"></img>
+                    <img src={Blog}></img>
                 <p>In the realm of e-commerce, establishing a strong online
                      presence and streamlining business operations are crucial for 
                      success. Shopify, one of the leading e-commerce platforms, provides 

@@ -48,6 +48,7 @@ import {
     img,
     heading,
     title,
+    coming
   }) {
     const { classes } = useStyles();
   
@@ -58,7 +59,7 @@ import {
         </Card.Section>
 
         <Text fw={700} className={classes.heading} mt="xs">
-          {heading}
+          {heading}<span style={{fontSize:"10px"}}>{coming}</span> 
         </Text>
         <Text fw={400} className={classes.title} mt="xs">
           {title}

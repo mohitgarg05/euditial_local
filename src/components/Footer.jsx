@@ -107,7 +107,7 @@ const data = [
       links: [
         {
           label: 'CDON Connector',
-          link: '/link1',
+          link: '/cdon',
         },
         {
           label: 'Etsy Connector',
@@ -124,15 +124,16 @@ const data = [
       links: [
         {
           label: 'About Us',
-          link: '/link3',
+          link: '/about-us',
         },
         {
           label: 'Blog',
+          link: '/blog-post/enhancing-eu-E-commerce',
+        }, 
+        {
+          label: 'Privacy Policy',
           link: '/link4',
-        }, {
-            label: 'Privacy Policy',
-            link: '/link4',
-          },
+        }
       ],
     },
   ];
@@ -146,7 +147,6 @@ export function FooterLinks() {
         className={classes.link}
         component="a"
         href={link.link}
-        onClick={(event) => event.preventDefault()}
       >
         {link.label}
       </Text>

@@ -1,13 +1,14 @@
 import Navbar from "../Navbar";
 import Footer from "../Footer";
 import "../../styles/blog.css"
+import Blog from "../../images/Designer.png";
 function FirstBlog(){
     return(
         <div className="bog_container" >
             <Navbar />
             <div className="blog_wrapper">
                 <h1> Enhancing EU E-commerce: The Power of Shopify Apps in the EU Digital Landscape</h1>
-                    <img src="https://assets.website-files.com/636beeacf6f6ac11e3f722cc/6377871724da1944e2823758_cherrydeck-rMILC1PIwM0-unsplash.jpg"></img>
+                    <img src={Blog}></img>
                 <p>As the European Union (EU) continues to foster digital innovation and connectivity, businesses within the region are seeking effective tools to thrive 
                     in the ever-expanding e-commerce landscape. Shopify, a renowned e-commerce platform, offers a wide range of apps that can significantly 
                     enhance online stores, streamline operations, and boost sales. In this blog post, we will explore the synergy between Shopify apps and 

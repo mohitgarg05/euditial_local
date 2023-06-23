@@ -1,13 +1,15 @@
 import Navbar from "../Navbar";
 import Footer from "../Footer";
 import "../../styles/blog.css"
+import Blog from "../../images/Designer (3).png";
+
 function ThirdBlog(){
     return(
         <div className="bog_container" >
             <Navbar />
             <div className="blog_wrapper">
                 <h1> Empowering a Digital Europe: Unleashing the Potential of EU Digital Initiatives</h1>
-                    <img src="https://assets.website-files.com/636beeacf6f6ac11e3f722cc/6377871724da1944e2823758_cherrydeck-rMILC1PIwM0-unsplash.jpg"></img>
+                    <img src={Blog}></img>
                 <p>The European Union (EU) has embarked on a transformative journey to build a digital Europe, harnessing the power of technology and innovation to drive economic growth, enhance digital rights, and foster a connected society. In this blog post, we will delve into the key aspects of the EU's digital agenda and explore how these initiatives are shaping the future of a digital Europe.</p>
 
 

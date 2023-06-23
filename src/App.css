@@ -132,6 +132,12 @@ section{
   }
 }
 
+@media (max-width: 1200px){
+  .featured_app h1{
+    width: 80%;
+  }
+}
+
 
 @media (max-width: 800px) {
   .app_div {
@@ -145,4 +151,5 @@ section{
     font-size: 20px;
 
   }
+
 }

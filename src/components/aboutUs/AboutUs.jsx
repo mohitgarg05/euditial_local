@@ -2,7 +2,8 @@ import Navbar from "../Navbar";
 import React from "react";
 import '../../styles/about.css'
 import Customer from "../CustomerReview";
-import Supoort from "../../images/support.png";
+import Supoort from "../../images/Our dedicated customer support team.png";
+
 import FooterLinks from "../Footer";
 function AboutUs(){
     return(
@@ -21,13 +22,9 @@ function AboutUs(){
                 </div>
 
                 <div className="support_div  ">
-                    <div className="support_para">
-                        <h1>Our Support Team Is Here To Help You</h1>
-                        <button>Contact us</button>
-                    </div>
-                    <div className="support_img">
-                        <img src={Supoort} />
-                    </div>
+
+                            <img src={Supoort} />
+
                 </div>
                 <div className="customer" style={{marginTop:"60px"}}>
                     <h1 style={{textAlign:"center"}}>Customers Recommend Us</h1>

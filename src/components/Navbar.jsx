@@ -11,13 +11,16 @@ import {
   import { useDisclosure } from '@mantine/hooks';
   import { IconChevronDown } from '@tabler/icons-react';
   import "../styles/navbar.css"
+  import { useEffect } from "react";
+  import { useNavigate } from "react-router-dom";
   import Logo from "../images/EUDIZITAL LOGO (2).png";
   
   const HEADER_HEIGHT = rem(70);
   
   const useStyles = createStyles((theme) => ({
     site_logo:{
-        width:"85px"
+        width:"85px",
+        cursor:"pointer"
     }
     ,
     inner: {
@@ -67,11 +70,11 @@ import {
       label: 'Home',
     },
     {
-      link: '/products',
+      link: '/cdon',
       label: 'Apps',
       links: [
         {
-          link: '/category1',
+          link: '/cdon',
           label: 'CDON Connector App',
         },
       ],
@@ -85,10 +88,24 @@ import {
 
    function HeaderAction() {
     const { classes } = useStyles();
+
+    const navi = useNavigate();
+
     const [opened, { toggle }] = useDisclosure(false);
+
+    const handleBurgerClick = () => {
+      console.log('Before toggle:', opened);
+      toggle();
+      console.log('After toggle:', opened);
+    };
+
+    useEffect(() => {
+      console.log('Opened state:', opened);
+    }, [opened]);
+    
     const items = links.map((link) => {
       const menuItems = link.links?.map((item) => (
-        <Menu.Item key={item.link} onClick={()=>console.log("mskmd")}>{item.label}</Menu.Item>
+        <Menu.Item key={item.link}><a className={classes.link} href={item.link}>{item.label}</a></Menu.Item>
       ));
   
       if (menuItems) {
@@ -125,8 +142,8 @@ import {
       <Header height={HEADER_HEIGHT}  sx={{ borderBottom: 0 }} mb={120}>
         <Container className={classes.inner} fluid>
           <Group>
-            <Burger opened={opened} onClick={toggle} className={classes.burger} size="sm" />
-            <img className={classes.site_logo} src={Logo} />
+            <Burger opened={opened} onClick={handleBurgerClick} className={classes.burger} size="sm"  />
+            <img className={classes.site_logo} src={Logo} onClick={()=>navi("/")} />
          
           <Group spacing={5} className={classes.links}>
             {items}
