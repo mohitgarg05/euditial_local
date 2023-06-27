@@ -19,7 +19,8 @@ import {
   
   const useStyles = createStyles((theme) => ({
     site_logo:{
-        width:"85px",
+        width:"80px",
+        marginTop:"15px",
         cursor:"pointer"
     }
     ,
